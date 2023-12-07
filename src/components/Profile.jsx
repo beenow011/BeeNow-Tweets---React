@@ -1,14 +1,16 @@
 import React from "react";
-
+import { useUser } from "../context/UserContext";
 export const Profile = () => {
+  const { users } = useUser();
   return (
     <div className="flex">
+      {console.log(users)}
       <img
         src="https://picsum.photos/id/234/400/400"
         alt=""
         className="rounded-full ring-4 ring-black m-4"
       />
-      <div className="p-4 flex flex-col items-center ">
+      <div className="p-4 flex flex-col m-auto ">
         <ul className="flex flex-col items-start">
           <li className="mb-4">
             <h1 className="text-3xl font-sans font-bold">@abhinav_nb</h1>

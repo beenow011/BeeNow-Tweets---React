@@ -11,6 +11,7 @@ import { Layout } from "./Layout.jsx";
 import { Home } from "./components/Home.jsx";
 import { Tweets } from "./components/Tweets.jsx";
 import { Profile } from "./components/Profile.jsx";
+import { UserProfile } from "./components/UserProfile.jsx";
 
 const router = createBrowserRouter([
   {
@@ -28,6 +29,10 @@ const router = createBrowserRouter([
       {
         path: "profile",
         element: <Profile />,
+      },
+      {
+        path: "userprofile",
+        element: <UserProfile />,
       },
     ],
   },

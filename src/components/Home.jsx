@@ -1,13 +1,14 @@
-import React from "react";
+import React, { useState } from "react";
 import { CardTemplate } from "./CardTemplate";
 import { tweets } from "./tweetInfo";
 import { BigCardTemplate } from "./BigCardTemplate";
+import { UserProvider } from "../context/UserContext";
 export const Home = () => {
   return (
     <div>
       <h1 className="text-3xl font-bold text-start p-5">Top tweets</h1>
 
-      <div className="grid grid-cols-3">
+      <div className="grid grid-cols-3 ">
         {tweets.map((tweetInfo) => (
           <CardTemplate
             userId={tweetInfo.userId}
