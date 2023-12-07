@@ -16,7 +16,7 @@ export const Profile = () => {
             <h1 className="text-3xl font-sans font-bold">@abhinav_nb</h1>
           </li>
           <li className="mb-4">
-            <p>Abhinav N B</p>
+            <p className="text-gray-700 text-2xl">Abhinav N B</p>
           </li>
           <li className="mb-4">
             <p className="text-start">

@@ -43,12 +43,10 @@ export const CardTemplate = ({ userId, tweet, likeCountPrev, img }) => {
       <div>
         <Card className="mt-6 w-80 m-5 ring-1 shadow-black ring-gray-400 min-h-fit">
           <CardBody>
-            <Link to="userprofile" onClick={handleUser}>
+            <Link to="userprofile">
               <Typography variant="h5" color="blue-gray" className="mb-2 flex">
                 <img
                   src={img}
-                  alt=""
-                  srcset=""
                   className="rounded-full mr-2 ring-2 ring-black"
                   width={30}
                   height={30}
@@ -59,14 +57,7 @@ export const CardTemplate = ({ userId, tweet, likeCountPrev, img }) => {
             <Typography>{tweet}</Typography>
           </CardBody>
           <CardFooter className="pt-0 flex">
-            <img
-              src={like}
-              alt=""
-              srcset=""
-              onClick={handelLike}
-              width={24}
-              height={24}
-            />
+            <img src={like} onClick={handelLike} width={24} height={24} />
             <h3 className="pl-3">{likeCount}</h3>
           </CardFooter>
         </Card>
