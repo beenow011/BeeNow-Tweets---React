@@ -13,7 +13,7 @@ export const Tweets = () => {
     if (Tweet.length > 0) {
       e.preventDefault();
       dispatch(addTweet(Tweet));
-      alert("successfully tweeted..!");
+
       setTweet("");
     } else {
       alert("tweet must be min of 1 char.");
@@ -34,6 +34,7 @@ export const Tweets = () => {
             placeholder=" Tweet here...!"
             wrap="soft"
             maxLength="500"
+            minLength="1"
             id="textbox"
             value={Tweet}
             onChange={handleChange}
@@ -44,6 +45,7 @@ export const Tweets = () => {
           >
             Tweet
           </button>
+
           <img src={birdbg} alt="" width={100} className="m-10" />
           <img src={birdbg} alt="" width={100} className="m-10 mt-auto" />
           <img src={birdbg} alt="" width={100} className="m-10" />

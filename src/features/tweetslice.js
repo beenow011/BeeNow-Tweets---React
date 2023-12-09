@@ -1,6 +1,6 @@
-import {createSlice} from '@reduxjs/toolkit';
+import {createSlice ,nanoid} from '@reduxjs/toolkit';
 import {  tweets } from '../components/tweetInfo';
-import { addTodo } from '../../../redux-toolkit-todo/src/features/todo/todoSlice';
+
 const initialState = {
     allTweets: [...tweets]
 }
@@ -11,12 +11,16 @@ export const tweetSlice = createSlice({
     reducers:{
         addTweet:(state,action)=>{
             const tweet = {
-                userId: "@abhinavnb011",
+                id:nanoid(),
+                userId: "@abhinav_nb",
                 tweet: action.payload,
                 likeCountPrev: 0,
                 img:`https://picsum.photos/id/157/40/40`
             }
             state.allTweets.unshift(tweet)
+        },
+        dltTweet:(state,action)=>{
+            state.allTweets = state.allTweets.filter((tweet) => tweet.id !== action.payload )
         }
 
     }

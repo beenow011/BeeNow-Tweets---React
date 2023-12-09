@@ -10,7 +10,7 @@ export const Home = () => {
     if (savedTweet && savedTweet.length > 0) {
       setTweets(savedTweet);
     }
-  }, [tweets]);
+  }, []);
 
   useEffect(() => {
     localStorage.setItem("tweets", JSON.stringify(tweets));
