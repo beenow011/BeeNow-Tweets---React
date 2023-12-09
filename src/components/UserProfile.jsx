@@ -1,7 +1,5 @@
 import React from "react";
-import { useUser } from "../context/UserContext";
 export const UserProfile = () => {
-  const { users } = useUser();
   const img = "https://picsum.photos/id/123/40/40";
   const userId = "@jsdjfbjfb";
   const bio = "kdjfsfjhjdskjfbfvjkdbskjbvjcbjkdbfjbvkjbfbdvjbcjkdbfjkvbfkjb";

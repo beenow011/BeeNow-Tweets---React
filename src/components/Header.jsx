@@ -49,9 +49,12 @@ export const Header = () => {
           </ul>
         </div>
         <div className="flex-none flex items-center">
-          <button className="bg-white hover:bg-gray-500 rounded-md text-black p-2">
-            Login
-          </button>
+          <a
+            href="https://github.com/beenow011/BeeNow-Tweets---React"
+            className="bg-white hover:bg-gray-500 rounded-md text-black p-2"
+          >
+            Github
+          </a>
         </div>
       </nav>
     </header>

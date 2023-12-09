@@ -1,10 +1,7 @@
 import React from "react";
-import { useUser } from "../context/UserContext";
 export const Profile = () => {
-  const { users } = useUser();
   return (
     <div className="flex">
-      {console.log(users)}
       <img
         src="https://picsum.photos/id/234/400/400"
         alt=""
