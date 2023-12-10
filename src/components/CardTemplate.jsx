@@ -38,7 +38,7 @@ export const CardTemplate = ({ userId, tweet, likeCountPrev, img }) => {
 
   return (
     <div>
-      <Card className="mt-6 w-80 m-5 ring-1 shadow-black ring-gray-400 min-h-fit">
+      <Card className="mt-6 w-80 md:w-64 lg:w-80 m-5 ring-1 shadow-black ring-gray-400 min-h-fit">
         <CardBody>
           <Link to="userprofile">
             <Typography variant="h5" color="blue-gray" className="mb-2 flex">
@@ -51,7 +51,7 @@ export const CardTemplate = ({ userId, tweet, likeCountPrev, img }) => {
               {userId}
             </Typography>
           </Link>
-          <Typography>{tweet}</Typography>
+          <Typography className="break-words">{tweet}</Typography>
         </CardBody>
         <CardFooter className="pt-0 flex">
           <img src={like} onClick={handelLike} width={24} height={24} />

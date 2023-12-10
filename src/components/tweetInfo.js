@@ -68,7 +68,7 @@ export const tweets = [
         img:`https://picsum.photos/id/169/40/40`
     },
     {
-      id:0,
+      id:9,
       userId:"@abhinav_nb",
       tweet:` Animal review: "The first half excels, while the second half falters
       with weak execution but picks up well towards the climax.

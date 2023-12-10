@@ -10,7 +10,7 @@ import { store } from "./app/store";
 export const Layout = () => {
   return (
     <Provider store={store}>
-      <div className="bg-[beige] shadow-md  shadow-black">
+      <div className="bg-[#8193ce] shadow-md  shadow-black">
         <Header />
         <Outlet />
         <Footer />

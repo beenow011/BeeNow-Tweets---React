@@ -27,5 +27,5 @@ export const tweetSlice = createSlice({
 
 })
 
-export const {addTweet} = tweetSlice.actions;
+export const {addTweet,dltTweet} = tweetSlice.actions;
 export default tweetSlice.reducer;

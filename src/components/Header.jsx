@@ -3,18 +3,19 @@ import { Link, NavLink } from "react-router-dom";
 
 export const Header = () => {
   return (
-    <header className="shadow sticky z-50 top-0">
+    <header className="shadow sticky z-50 top-0 ">
       <nav className=" bg-black lg:px-10 py-2.5 text-white flex   justify-evenly rounded-md">
         <div className="flex-none">
           <Link to="/">
-            <h1 className="flex text-3xl">
-              Bee<p className="text-blue-500">N</p>ow
+            <h1 className="flex sm:text-lg  md:text-3xl ">
+              <p className="text-blue-500">B</p>e
+              <p className="text-blue-500">N</p>ow
             </h1>
           </Link>
         </div>
 
         <div className="grow flex justify-center items-center">
-          <ul className="flex gap-10">
+          <ul className="flex gap-5 md:gap-10">
             <li>
               <NavLink
                 to="/"
@@ -51,7 +52,7 @@ export const Header = () => {
         <div className="flex-none flex items-center">
           <a
             href="https://github.com/beenow011/BeeNow-Tweets---React"
-            className="bg-white hover:bg-gray-500 rounded-md text-black p-2"
+            className="bg-white hover:bg-gray-500 rounded-md text-black p-2 "
           >
             Github
           </a>

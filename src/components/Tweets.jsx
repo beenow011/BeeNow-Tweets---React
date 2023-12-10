@@ -26,7 +26,7 @@ export const Tweets = () => {
           What's on your mind...!?
         </h1>
         <div
-          className="flex items-start bg-[url('../assets/birdbg.png') bg-cover]"
+          className="flex items-start bg-[url('../assets/birdbg.png') bg-cover] overflow-hidden"
           id="bg"
         >
           <textarea
@@ -40,7 +40,7 @@ export const Tweets = () => {
             onChange={handleChange}
           ></textarea>
           <button
-            className="p-3 bg-blue-gray-600  ml-10 rounded-md hover:bg-blue-gray-900 text-blue-gray-100 mt-auto"
+            className="p-3 bg-blue-gray-600 ml-3 md:ml-10 rounded-md hover:bg-blue-gray-900 text-blue-gray-100 mt-auto"
             type="submit"
           >
             Tweet

@@ -3,7 +3,7 @@ import like from "../assets/like.png";
 import liked from "../assets/liked.png";
 import option from "../assets/option.png";
 import { Link } from "react-router-dom";
-
+import { useDispatch } from "react-redux";
 import {
   Card,
   CardBody,
@@ -12,10 +12,13 @@ import {
   Button,
 } from "@material-tailwind/react";
 import { useState } from "react";
-export const MyTweet = ({ userId, tweet, likeCountPrev, img }) => {
+import { dltTweet } from "../features/tweetslice";
+export const MyTweet = ({ userId, tweet, likeCountPrev, img, id }) => {
   const [users, setUsers] = useState({});
   const [likeCount, setLikeCount] = useState(likeCountPrev);
   const [isLike, setIsLike] = useState(false);
+  const dispatch = useDispatch();
+
   const handelLike = (e) => {
     if (!isLike) {
       e.target.src = liked;
@@ -37,9 +40,14 @@ export const MyTweet = ({ userId, tweet, likeCountPrev, img }) => {
     });
   };
 
+  const handleChange = (e) => {
+    if (e.target.value === "dlt") {
+      dispatch(dltTweet(id));
+    }
+  };
   return (
     <div>
-      <Card className="mt-6 w-80 m-5 ring-1  shadow-black ring-gray-400 min-h-fit">
+      <Card className="mt-6 w-80 md:m-5 ring-1 bg-white/25  shadow-black ring-gray-400 min-h-fit">
         <CardBody>
           <Typography variant="h5" color="blue-gray" className="mb-2 flex">
             <img
@@ -53,14 +61,15 @@ export const MyTweet = ({ userId, tweet, likeCountPrev, img }) => {
               name="option"
               value=""
               id=""
-              className={`ml-auto block rounded-full  text-sm font-medium text-gray-900  bg-white`}
+              className={`ml-auto block rounded-full  text-sm font-medium text-gray-900  bg-blue-200/20`}
+              onChange={handleChange}
             >
               <option selected></option>
               <option value="dlt">delete tweet</option>
             </select>
           </Typography>
 
-          <Typography>{tweet}</Typography>
+          <Typography className="overflow-wrap break-words">{tweet}</Typography>
         </CardBody>
         <CardFooter className="pt-0 flex">
           <img src={like} onClick={handelLike} width={24} height={24} />

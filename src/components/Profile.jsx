@@ -3,6 +3,7 @@ import { MyTweet } from "./MyTweet";
 import { CardTemplate } from "./CardTemplate";
 import { useSelector } from "react-redux";
 import { Link } from "react-router-dom";
+import { useDispatch } from "react-redux";
 export const Profile = () => {
   const tweetSelector = useSelector((state) => state.allTweets);
   const [tweets, setTweets] = useState(tweetSelector);
@@ -12,11 +13,11 @@ export const Profile = () => {
     // console.log(tweets);
   }, [tweetSelector]);
   return (
-    <div className="flex">
+    <div className="md:flex">
       <img
         src="https://picsum.photos/id/234/400/400"
         alt=""
-        className="rounded-full ring-4 ring-black m-4 h-96"
+        className="rounded-full ring-4 ring-black m-4 h-36  md:h-96"
       />
       <div className="p-4 flex flex-col m-auto ">
         <ul className="flex flex-col items-start">
@@ -41,6 +42,7 @@ export const Profile = () => {
           {tweets.length > 0 ? (
             tweets.map((tweetInfo, i) => (
               <MyTweet
+                id={tweetInfo.id}
                 key={i}
                 userId={tweetInfo.userId}
                 tweet={tweetInfo.tweet}
@@ -50,7 +52,7 @@ export const Profile = () => {
             ))
           ) : (
             <div className="flex  ">
-              <p className="text-start text-gray-600 text-xl h-5">No tweets</p>
+              <p className="text-start text-gray-800 text-xl h-5">No tweets</p>
               <Link to="/tweets">
                 {" "}
                 <button className="bg-blue-500 rounded-lg p-1 ml-2 text-white hover:bg-blue-700">

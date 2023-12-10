@@ -8,7 +8,8 @@ export default function Footer() {
           <div className="mb-6 md:mb-0">
             <Link to="/" className="flex items-center">
               <h1 className="flex text-3xl">
-                Bee<p className="text-blue-500">N</p>ow
+                <p className="text-blue-500">B</p>e
+                <p className="text-blue-500">N</p>ow
               </h1>
             </Link>
           </div>
@@ -68,7 +69,8 @@ export default function Footer() {
           <div className="flex mt-4 space-x-5 sm:justify-center sm:mt-0">
             <Link to="/" className="flex items-center">
               <h5 className="flex text-lg">
-                Bee<p className="text-blue-500">N</p>ow
+                <p className="text-blue-500">B</p>e
+                <p className="text-blue-500">N</p>ow
               </h5>
             </Link>
           </div>
