@@ -25,12 +25,12 @@ export default function Footer() {
                   </Link>
                 </li>
                 <li className="mb-4">
-                  <Link to="/" className="hover:underline">
+                  <Link to="/tweets" className="hover:underline">
                     Tweet
                   </Link>
                 </li>
                 <li>
-                  <Link to="/" className="hover:underline">
+                  <Link to="/profile" className="hover:underline">
                     Profile
                   </Link>
                 </li>

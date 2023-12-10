@@ -46,9 +46,24 @@ export const Tweets = () => {
             Tweet
           </button>
 
-          <img src={birdbg} alt="" width={100} className="m-10" />
-          <img src={birdbg} alt="" width={100} className="m-10 mt-auto" />
-          <img src={birdbg} alt="" width={100} className="m-10" />
+          <img
+            src={birdbg}
+            alt=""
+            width={100}
+            className="m-10 hidden md:inline"
+          />
+          <img
+            src={birdbg}
+            alt=""
+            width={100}
+            className="m-10 mt-auto hidden md:inline"
+          />
+          <img
+            src={birdbg}
+            alt=""
+            width={100}
+            className="m-10 hidden md:inline"
+          />
         </div>
       </form>
     </div>
