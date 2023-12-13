@@ -1,5 +1,6 @@
 import {createSlice ,nanoid} from '@reduxjs/toolkit';
 import {  tweets } from '../components/tweetInfo';
+import dp from "../assets/dp.jpg";
 
 const initialState = {
     allTweets: [...tweets]
@@ -15,7 +16,7 @@ export const tweetSlice = createSlice({
                 userId: "@abhinav_nb",
                 tweet: action.payload,
                 likeCountPrev: 0,
-                img:`https://picsum.photos/id/157/40/40`
+                img:dp
             }
             state.allTweets.unshift(tweet)
         },

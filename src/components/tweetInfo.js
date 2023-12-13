@@ -1,3 +1,5 @@
+import dp from "../assets/dp.jpg";
+
 export const tweets = [
     {
       id:0,  
@@ -74,7 +76,7 @@ export const tweets = [
       with weak execution but picks up well towards the climax.
       Overall Average!" #animal`,
       likeCountPrev:parseInt(Math.random()*100),
-      img:`https://picsum.photos/30/30`
+      img:dp
   },
   {
     id:0,

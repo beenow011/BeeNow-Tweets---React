@@ -4,6 +4,7 @@ import { CardTemplate } from "./CardTemplate";
 import { useSelector } from "react-redux";
 import { Link } from "react-router-dom";
 import { useDispatch } from "react-redux";
+import dp from "../assets/dp.jpg";
 export const Profile = () => {
   const tweetSelector = useSelector((state) => state.allTweets);
   const [tweets, setTweets] = useState(tweetSelector);
@@ -15,7 +16,7 @@ export const Profile = () => {
   return (
     <div className="md:flex">
       <img
-        src="https://picsum.photos/id/234/400/400"
+        src={dp}
         alt=""
         className="rounded-full ring-4 ring-black m-4 h-36  md:h-96"
       />
