@@ -11,6 +11,7 @@ import {
   Button,
 } from "@material-tailwind/react";
 import { useState } from "react";
+import { UserProfile } from "./UserProfile";
 export const CardTemplate = ({ userId, tweet, likeCountPrev, img }) => {
   const [users, setUsers] = useState({});
   const [likeCount, setLikeCount] = useState(likeCountPrev);
@@ -40,7 +41,7 @@ export const CardTemplate = ({ userId, tweet, likeCountPrev, img }) => {
     <div>
       <Card className="mt-6 w-80 md:w-64 lg:w-80 m-5 ring-1 shadow-black ring-gray-400 min-h-fit">
         <CardBody>
-          <Link to="userprofile">
+          <Link to={`userprofile/${userId}`}>
             <Typography variant="h5" color="blue-gray" className="mb-2 flex">
               <img
                 src={img}

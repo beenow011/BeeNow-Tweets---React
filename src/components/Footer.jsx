@@ -7,9 +7,11 @@ export default function Footer() {
         <div className="md:flex md:justify-between">
           <div className="mb-6 md:mb-0">
             <Link to="/" className="flex items-center">
-              <h1 className="flex text-3xl">
-                <p className="text-blue-500">B</p>e
-                <p className="text-blue-500">N</p>ow
+              <h1 className="flex sm:text-lg  md:text-3xl  border-gray-400 border-solid border-2">
+                <p className="bg-blue-500 text-black px-1 ">Be</p>
+                <p className="text-black   bg-white flex px-1">
+                  N<p className="italic">ow</p>
+                </p>
               </h1>
             </Link>
           </div>
@@ -68,10 +70,12 @@ export default function Footer() {
           </span>
           <div className="flex mt-4 space-x-5 sm:justify-center sm:mt-0">
             <Link to="/" className="flex items-center">
-              <h5 className="flex text-lg">
-                <p className="text-blue-500">B</p>e
-                <p className="text-blue-500">N</p>ow
-              </h5>
+              <h1 className="flex text-lg  border-gray-400 border-solid border-2">
+                <p className="bg-blue-500 text-black px-1 ">Be</p>
+                <p className="text-black   bg-white flex px-1">
+                  N<p className="italic">ow</p>
+                </p>
+              </h1>
             </Link>
           </div>
         </div>

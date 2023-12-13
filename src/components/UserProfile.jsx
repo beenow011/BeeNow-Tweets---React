@@ -1,8 +1,10 @@
 import React from "react";
+import { useParams } from "react-router-dom";
 export const UserProfile = () => {
   const img = "https://picsum.photos/id/123/40/40";
-  const userId = "@jsdjfbjfb";
+  // const userId = "@jsdjfbjfb";
   const bio = "kdjfsfjhjdskjfbfvjkdbskjbvjcbjkdbfjbvkjbfbdvjbcjkdbfjkvbfkjb";
+  const { userId } = useParams();
   return (
     <div className="flex">
       <img src="" alt="" className="rounded-full ring-4 ring-black m-4" />
