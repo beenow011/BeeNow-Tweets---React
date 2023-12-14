@@ -6,7 +6,6 @@ export const Home = () => {
   const [tweets, setTweets] = useState(tweetSelector);
   useEffect(() => {
     const savedTweet = JSON.parse(localStorage.getItem("tweets"));
-
     if (savedTweet && savedTweet.length > 0) {
       setTweets(savedTweet);
     }
