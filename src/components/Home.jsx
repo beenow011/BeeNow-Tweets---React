@@ -14,7 +14,7 @@ export const Home = () => {
 
   useEffect(() => {
     localStorage.setItem("tweets", JSON.stringify(tweets));
-  }, [tweets]);
+  }, []);
   return (
     <div>
       <h1 className="text-3xl font-bold text-start p-5">Top tweets</h1>

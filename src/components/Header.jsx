@@ -7,7 +7,7 @@ export const Header = () => {
       <nav className=" bg-black lg:px-10 py-2.5 text-white flex   justify-evenly rounded-md sm:flex-col md:flex-row">
         <div className="flex-none my-auto ml-1">
           <Link to="/">
-            <h1 className="flex sm:text-lg  md:text-3xl  border-gray-400 border-solid border-2">
+            <h1 className="flex sm:text-lg  md:text-3xl  ">
               <p className="bg-blue-500 text-black px-1 ">Be</p>
               <p className="text-black   bg-white flex px-1">
                 N<span className="italic">ow</span>
