@@ -16,8 +16,8 @@ export const Header = () => {
           </Link>
         </div>
 
-        <div className="grow flex justify-center items-center">
-          <ul className="flex gap-5 md:gap-10">
+        <div className="grow flex justify-center items-center text-sm md:text-lg">
+          <ul className="flex gap-6 md:gap-10">
             <li>
               <NavLink
                 to="/"
