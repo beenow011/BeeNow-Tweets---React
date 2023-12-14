@@ -61,10 +61,10 @@ export const MyTweet = ({ userId, tweet, likeCountPrev, img, id }) => {
               name="option"
               value=""
               id=""
-              className={`ml-auto block rounded-full  text-sm font-medium text-gray-900  bg-blue-200/20`}
+              className={`ml-auto block rounded-full  text-sm font-medium text-gray-900  bg-white/0`}
               onChange={handleChange}
             >
-              <option selected></option>
+              <option></option>
               <option value="dlt">delete tweet</option>
             </select>
           </Typography>

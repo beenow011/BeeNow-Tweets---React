@@ -10,7 +10,7 @@ export const UserProfile = () => {
   // const bio = "kdjfsfjhjdskjfbfvjkdbskjbvjcbjkdbfjbvkjbfbdvjbcjkdbfjkvbfkjb";
   const userName = user.userId.slice(1);
   return (
-    <div className="flex">
+    <div className="md:flex">
       {console.log(userName)}
       <img
         src={user.img}

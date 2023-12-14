@@ -10,7 +10,7 @@ export default function Footer() {
               <h1 className="flex sm:text-lg  md:text-3xl  border-gray-400 border-solid border-2">
                 <p className="bg-blue-500 text-black px-1 ">Be</p>
                 <p className="text-black   bg-white flex px-1">
-                  N<p className="italic">ow</p>
+                  N<span className="italic">ow</span>
                 </p>
               </h1>
             </Link>
@@ -73,7 +73,7 @@ export default function Footer() {
               <h1 className="flex text-lg  border-gray-400 border-solid border-2">
                 <p className="bg-blue-500 text-black px-1 ">Be</p>
                 <p className="text-black   bg-white flex px-1">
-                  N<p className="italic">ow</p>
+                  N<span className="italic">ow</span>
                 </p>
               </h1>
             </Link>

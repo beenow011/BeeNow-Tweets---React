@@ -4,13 +4,13 @@ import { Link, NavLink } from "react-router-dom";
 export const Header = () => {
   return (
     <header className="shadow sticky z-50 top-0 ">
-      <nav className=" bg-black lg:px-10 py-2.5 text-white flex   justify-evenly rounded-md">
-        <div className="flex-none">
+      <nav className=" bg-black lg:px-10 py-2.5 text-white flex   justify-evenly rounded-md sm:flex-col md:flex-row">
+        <div className="flex-none my-auto ml-1">
           <Link to="/">
             <h1 className="flex sm:text-lg  md:text-3xl  border-gray-400 border-solid border-2">
               <p className="bg-blue-500 text-black px-1 ">Be</p>
               <p className="text-black   bg-white flex px-1">
-                N<p className="italic">ow</p>
+                N<span className="italic">ow</span>
               </p>
             </h1>
           </Link>
@@ -22,7 +22,9 @@ export const Header = () => {
               <NavLink
                 to="/"
                 className={({ isActive }) =>
-                  ` ${isActive ? "text-blue-400" : "text-white"} `
+                  ` ${
+                    isActive ? "text-blue-400" : "text-white"
+                  }  hover:text-blue-300`
                 }
               >
                 Home
@@ -32,7 +34,9 @@ export const Header = () => {
               <NavLink
                 to="/tweets"
                 className={({ isActive }) =>
-                  ` ${isActive ? "text-blue-400" : "text-white"} `
+                  ` ${
+                    isActive ? "text-blue-400" : "text-white"
+                  }  hover:text-blue-300 `
                 }
               >
                 Tweets
@@ -43,7 +47,9 @@ export const Header = () => {
               <NavLink
                 to="/profile"
                 className={({ isActive }) =>
-                  ` ${isActive ? "text-blue-400" : "text-white"} `
+                  ` ${
+                    isActive ? "text-blue-400" : "text-white"
+                  }  hover:text-blue-300`
                 }
               >
                 Profile
@@ -54,7 +60,7 @@ export const Header = () => {
         <div className="flex-none flex items-center">
           <a
             href="https://github.com/beenow011/BeeNow-Tweets---React"
-            className="bg-white hover:bg-gray-500 rounded-md text-black p-2 "
+            className="md:bg-white hover:bg-gray-500 rounded-md md:text-black  sm:text-sm  p-2 mx-2"
           >
             Github
           </a>
