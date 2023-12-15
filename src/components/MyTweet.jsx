@@ -61,7 +61,7 @@ export const MyTweet = ({ userId, tweet, likeCountPrev, img, id }) => {
               name="option"
               value=""
               id=""
-              className={`ml-auto block rounded-full  text-sm font-medium text-gray-900  bg-white/0`}
+              className={`ml-auto block rounded-full  text-sm font-medium   bg-white/0 text-white`}
               onChange={handleChange}
             >
               <option></option>
