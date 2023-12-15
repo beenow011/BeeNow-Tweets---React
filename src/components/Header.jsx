@@ -28,7 +28,7 @@ export const Header = () => {
                   }  hover:text-blue-300`
                 }
               >
-                <span class="material-symbols-outlined">home</span>
+                <span className="material-symbols-outlined">home</span>
               </NavLink>
             </li>
             <li>
@@ -40,7 +40,7 @@ export const Header = () => {
                   }  hover:text-blue-300 `
                 }
               >
-                <span class="material-symbols-outlined">edit_note</span>
+                <span className="material-symbols-outlined">edit_note</span>
               </NavLink>
             </li>
             <li>
@@ -53,7 +53,9 @@ export const Header = () => {
                   }  hover:text-blue-300`
                 }
               >
-                <span class="material-symbols-outlined">account_circle</span>
+                <span className="material-symbols-outlined">
+                  account_circle
+                </span>
               </NavLink>
             </li>
           </ul>
