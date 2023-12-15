@@ -16,7 +16,9 @@ export const Home = () => {
   }, []);
   return (
     <div>
-      <h1 className="text-3xl font-bold text-start p-5">Top tweets</h1>
+      <h1 className="text-3xl font-bold text-start p-5 text-white">
+        Top tweets
+      </h1>
 
       <div className="md:grid md:grid-cols-2 lg:grid-cols-3 md:gap-2">
         {tweets.map((tweetInfo, i) => (
