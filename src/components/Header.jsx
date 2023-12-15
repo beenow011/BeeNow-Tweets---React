@@ -5,11 +5,12 @@ export const Header = () => {
   return (
     <header className=" sticky z-50 top-0 shadow-lg shadow-gray-900/80">
       <nav className=" bg-black lg:px-10 py-2.5 text-white flex   justify-evenly rounded-md sm:flex-col md:flex-row">
-        <div className="flex-none my-auto ml-1">
+        <div className="flex-none my-auto ml-2 md:pl-4">
           <Link to="/">
-            <h1 className="flex sm:text-lg  md:text-3xl  ">
-              <p className="bg-blue-500 text-black px-1 ">Be</p>
-              <p className="text-black   bg-white flex px-1">
+            <h1 className="flex sm:text-lg  md:text-3xl   ">
+              <p className="bg-blue-500 rounded-md text-black px-1 ">Be</p>
+              <p className="m-auto">-</p>
+              <p className="text-black rounded-lg  bg-white flex px-1">
                 N<span className="italic">ow</span>
               </p>
             </h1>
