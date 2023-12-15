@@ -15,7 +15,7 @@ export const Profile = () => {
     // console.log(tweets);
   }, [tweetSelector]);
   return (
-    <div className="md:flex">
+    <div className="md:flex text-white">
       <img
         src={dp}
         alt=""

@@ -30,7 +30,7 @@ export const Tweets = () => {
           id="bg"
         >
           <textarea
-            className="w-96 h-96 rounded-sm shadow-md shadow-black p-5 mt-6 font-mono "
+            className="w-96 h-96 rounded-lg shadow-md shadow-black p-5 mt-6 font-mono bg-[#1c1c21] text-white "
             placeholder=" Tweet here...!"
             wrap="soft"
             maxLength="500"
@@ -40,7 +40,7 @@ export const Tweets = () => {
             onChange={handleChange}
           ></textarea>
           <button
-            className="p-3 bg-blue-gray-600 ml-3 md:ml-10 rounded-md hover:bg-blue-gray-900 text-blue-gray-100 mt-auto"
+            className="p-3 bg-blue-600 ml-3 md:ml-10 rounded-md hover:bg-blue-gray-900 text-blue-gray-100 mt-auto"
             type="submit"
           >
             Tweet

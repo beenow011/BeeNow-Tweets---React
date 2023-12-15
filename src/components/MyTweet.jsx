@@ -1,5 +1,5 @@
 import React from "react";
-import like from "../assets/like.png";
+import like from "../assets/like3.png";
 import liked from "../assets/liked.png";
 import option from "../assets/option.png";
 import { Link } from "react-router-dom";
@@ -47,7 +47,7 @@ export const MyTweet = ({ userId, tweet, likeCountPrev, img, id }) => {
   };
   return (
     <div>
-      <Card className="mt-6 w-80 md:m-5 ring-1 bg-white/25  shadow-black ring-gray-400 min-h-fit">
+      <Card className="mt-6 w-80 md:m-5 ring-2 text-white bg-white/25  shadow-black ring-gray-400/40 min-h-fit bg-[#1c1c21]">
         <CardBody>
           <Typography variant="h5" color="blue-gray" className="mb-2 flex">
             <img
@@ -56,7 +56,7 @@ export const MyTweet = ({ userId, tweet, likeCountPrev, img, id }) => {
               width={30}
               height={30}
             />
-            {userId}
+            <p className="text-white">{userId}</p>
             <select
               name="option"
               value=""
