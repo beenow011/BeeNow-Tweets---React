@@ -1,7 +1,7 @@
 # React + Vite
-**WORKFLOW**
-tweetinfo contains all the prev tweets and its info.
-**REDUX**toolkit is used for adding or deleting tweet array, which is going to display in home page.
+**WORKFLOW** :
+tweetinfo contains all the prev tweets and its info. <br>
+**REDUX**toolkit is used for adding or deleting tweet array, which is going to display in home page. <br>
 home, tweet, profile is redirected by **REACT-ROUTER**
 
 
