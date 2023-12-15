@@ -11,7 +11,7 @@ export const Profile = () => {
   // let myTweets = [];
   useEffect(() => {
     setTweets(tweetSelector.filter((tweet) => tweet.userId === "@abhinav_nb"));
-    // localStorage.setItem("tweets", JSON.stringify(tweets));
+    localStorage.setItem("tweets", JSON.stringify(tweets));
     // console.log(tweets);
   }, [tweetSelector]);
   return (
