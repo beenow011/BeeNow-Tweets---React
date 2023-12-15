@@ -40,7 +40,7 @@ export const Profile = () => {
           </li>
         </ul>
         <h1 className="text-start text-3xl font-bold ">Your tweets</h1>
-        <div className="md:grid md:grid-cols-2 ">
+        <div className="lg:grid lg:grid-cols-2 ">
           {tweets.length > 0 ? (
             tweets.map((tweetInfo, i) => (
               <MyTweet
