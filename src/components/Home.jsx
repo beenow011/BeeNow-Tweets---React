@@ -20,7 +20,7 @@ export const Home = () => {
         Top tweets
       </h1>
 
-      <div className="md:grid md:grid-cols-2 lg:grid-cols-3 md:gap-2">
+      <div className="md:grid sm:max-md:grid-cols-2 md:grid-cols-3 md:gap-2">
         {tweets.map((tweetInfo, i) => (
           <CardTemplate
             key={i}

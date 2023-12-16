@@ -19,7 +19,7 @@ export const Profile = () => {
       <img
         src={dp}
         alt=""
-        className="rounded-full ring-4 ring-black m-4 h-36  md:h-96"
+        className="rounded-full ring-2 ring-white m-4 h-36  md:h-96"
       />
       <div className="p-4 flex flex-col m-auto ">
         <ul className="flex flex-col items-start">
