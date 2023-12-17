@@ -8,7 +8,7 @@ export default function Footer() {
           <div className="mb-6 md:mb-0">
             <Link to="/" className="flex items-center">
               <h1 className="flex sm:text-lg  md:text-3xl  border-gray-400 border-solid border-2">
-                <p className="bg-blue-500 text-black px-1 ">Be</p>
+                <p className="bg-[#ec5990] text-black px-1 ">Be</p>
                 <p className="text-black   bg-white flex px-1">
                   N<span className="italic">ow</span>
                 </p>
@@ -68,7 +68,7 @@ export default function Footer() {
           <div className="flex mt-4 space-x-5 sm:justify-center sm:mt-0">
             <Link to="/" className="flex items-center">
               <h1 className="flex text-lg  border-gray-400 border-solid border-2">
-                <p className="bg-blue-500 text-black px-1 ">Be</p>
+                <p className="bg-[#ec5990] text-black px-1 ">Be</p>
                 <p className="text-black   bg-white flex px-1">
                   N<span className="italic">ow</span>
                 </p>

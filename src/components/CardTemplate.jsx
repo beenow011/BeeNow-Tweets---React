@@ -49,7 +49,7 @@ export const CardTemplate = ({ userId, tweet, likeCountPrev, img }) => {
                 width={30}
                 height={30}
               />
-              <p className="text-blue-600">{userId}</p>
+              <p className=" text-blue-200">{userId}</p>
             </Typography>
           </Link>
           <Typography className="break-words">{tweet}</Typography>

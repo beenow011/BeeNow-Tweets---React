@@ -40,7 +40,7 @@ export const Tweets = () => {
             onChange={handleChange}
           ></textarea>
           <button
-            className="p-3 bg-blue-600 ml-3 md:ml-10 rounded-md hover:bg-blue-gray-900 text-blue-gray-100 mt-auto"
+            className="p-3 bg-[#ec5990] ml-3 md:ml-10 rounded-md hover:bg-blue-gray-900 text-blue-gray-100 mt-auto"
             type="submit"
           >
             Tweet

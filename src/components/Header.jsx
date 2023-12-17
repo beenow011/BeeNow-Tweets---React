@@ -8,7 +8,7 @@ export const Header = () => {
         <div className="flex-none my-auto ml-2 md:pl-4">
           <Link to="/">
             <h1 className="flex sm:text-lg  md:text-3xl   ">
-              <p className="bg-blue-500 rounded-md text-black px-1 ">Be</p>
+              <p className="bg-[#ec5990] rounded-md text-black px-1 ">Be</p>
               <p className="m-auto">-</p>
               <p className="text-black rounded-lg  bg-white flex px-1">
                 N<span className="italic">ow</span>
@@ -24,8 +24,8 @@ export const Header = () => {
                 to="/"
                 className={({ isActive }) =>
                   ` ${
-                    isActive ? "text-blue-400" : "text-white"
-                  }  hover:text-blue-300`
+                    isActive ? "text-[#ec5990]" : "text-white"
+                  }  hover:text-[#ec598f8c]`
                 }
               >
                 <span className="material-symbols-outlined">home</span>
@@ -36,8 +36,8 @@ export const Header = () => {
                 to="/tweets"
                 className={({ isActive }) =>
                   ` ${
-                    isActive ? "text-blue-400" : "text-white"
-                  }  hover:text-blue-300 `
+                    isActive ? "text-[#ec5990]" : "text-white"
+                  }  hover:text-[#ec598f8c]`
                 }
               >
                 <span className="material-symbols-outlined">edit_note</span>
@@ -49,8 +49,8 @@ export const Header = () => {
                 to="/profile"
                 className={({ isActive }) =>
                   ` ${
-                    isActive ? "text-blue-400" : "text-white"
-                  }  hover:text-blue-300`
+                    isActive ? "text-[#ec5990]" : "text-white"
+                  }  hover:text-[#ec598f8c]`
                 }
               >
                 <span className="material-symbols-outlined">
